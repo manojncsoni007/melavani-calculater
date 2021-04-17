@@ -22,13 +22,9 @@ inputForm.addEventListener('submit', function(e) {
     let sub = total * 100;
     let add = sub - weight;
 
-    loader.classList.add('showItem');
+    resultsDOM.classList.add('showItem');
+    pure.textContent = `${add.toFixed(3)}`;
 
-    setTimeout(() => {
-        loader.classList.remove('showItem');
-        resultsDOM.classList.add('showItem');
-        pure.textContent = `${add}`;
-    }, 1000)
 
 
 
