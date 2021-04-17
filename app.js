@@ -28,7 +28,7 @@ inputForm.addEventListener('submit', function(e) {
         loader.classList.remove('showItem');
         resultsDOM.classList.add('showItem');
         pure.textContent = `${add}`;
-    }, 2000)
+    }, 1000)
 
 
 
