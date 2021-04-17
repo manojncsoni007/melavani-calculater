@@ -1,0 +1,49 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .max-height {
+        min-height: 100vh;
+    }
+    
+    body {
+        background-color: #86BBD8;
+    }
+    
+    .card-title {
+        background-color: #336699;
+        border-top-right-radius: 1rem;
+        border-top-left-radius: 1rem;
+        color: white;
+    }
+    
+    .card {
+        border-radius: 1rem;
+    }
+    
+    .submitBtn {
+        background: #336699;
+        font-size: 1.2rem;
+        color: white;
+    }
+    
+    .submitBtn:hover {
+        background: lightBlue;
+        color: black;
+    }
+    
+    .bill-icon,
+    .user-icon {
+        background: #336699;
+        color: white;
+    }
+    
+    .results {
+        display: none;
+    }
+    
+    .showItem {
+        display: block;
+    }
