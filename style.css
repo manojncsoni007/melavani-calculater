@@ -51,3 +51,8 @@
     .showItem {
         display: block;
     }
+    
+    #pure {
+        color: red;
+        font-weight: bold;
+    }

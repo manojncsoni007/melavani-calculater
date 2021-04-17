@@ -25,7 +25,11 @@ inputForm.addEventListener('submit', function(e) {
     resultsDOM.classList.add('showItem');
     pure.textContent = `${add.toFixed(3)}`;
 
-
+    setTimeout(() => {
+        inputWeight.value = ' ';
+        inputTanch.value = ' ';
+        inputWantTanch.value = ' ';
+    }, 10000)
 
 
 })
