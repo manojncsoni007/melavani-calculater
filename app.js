@@ -11,6 +11,7 @@ inputForm.addEventListener('submit', function(e) {
     let weight = inputWeight.value;
     let tanch = inputTanch.value;
     let wTanch = inputWantTanch.value;
+    const loader = document.querySelector('.loader');
     const resultsDOM = document.querySelector('.results');
     const pure = document.querySelector('#pure');
 
@@ -21,8 +22,14 @@ inputForm.addEventListener('submit', function(e) {
     let sub = total * 100;
     let add = sub - weight;
 
-    resultsDOM.classList.add('showItem');
-    pure.textContent = `${add}`;
+    loader.classList.add('showItem');
+
+    setTimeout(() => {
+        loader.classList.remove('showItem');
+        resultsDOM.classList.add('showItem');
+        pure.textContent = `${add}`;
+    }, 2000)
+
 
 
 })

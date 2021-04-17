@@ -44,6 +44,10 @@
         display: none;
     }
     
+    .loader {
+        display: none;
+    }
+    
     .showItem {
         display: block;
     }
